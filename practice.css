@@ -11,7 +11,7 @@ body {
 }
 
 .nav {
-  height: 65px;
+  height: 85px;
   width: 100%;
   background-color: #fff;
   position: fixed;
@@ -43,7 +43,7 @@ body {
 
 .nav > .nav-links > a {
   display: inline-block;
-  padding: 19px 25px 19px 25px;
+  padding: 29px 25px 29px 25px;
   text-decoration: none;
   color: #000;
 }
@@ -201,9 +201,10 @@ h1::after {content:""; margin: auto; display: block; border-bottom: 1px solid #8
   text-transform: uppercase;
   font-weight: 600;
   font-size: 15px;
-  background-color: #fff;}
+  background-color: #fff;
+  padding: 10px;}
 
-.btn:hover, .btn.active {color: #999; font-weight: 600;}
+.btn:hover, .btn.active {color: #999; background-color: #eee; padding: 10px; border-radius: 5px; font-weight: 600;}
 
 @media only screen and (max-width: 1024px) {
 main, .portfolio {padding-top: 10%; padding-bottom: 15%;}
@@ -249,7 +250,7 @@ h1 {font-size: 40px;}
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
-    top: 65px;
+    top: 85px;
     left: 0px;
   }
   .nav > .nav-links > a {
@@ -266,7 +267,7 @@ h1 {font-size: 40px;}
     padding: 150px;
   }
 
-main, .portfolio {padding-bottom: 10%;}
+main, .portfolio {padding-bottom: 5%;}
 .about > #left {float:none; padding-right: 0;}
 #photo {width: 100%;}
 .column {width: 100%;}

@@ -29,6 +29,10 @@ body {
   padding: 3px 3px 3px 30px;
 }
 
+.nav > .nav-header > .logo:hover {
+  opacity: 0.5;
+}
+
 .nav > .nav-btn {
   display: none;
 }

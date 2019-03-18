@@ -72,7 +72,7 @@ padding: 10px;}
 
 footer ul {list-style-type: none;}
 
-.footer-img:hover {-webkit-filter: grayscale(100%);}
+.footer-img:hover {opacity: 0.5;}
 
 .portfolio {padding-top: 8%;}
 
@@ -179,7 +179,7 @@ h1::after {content:""; margin: auto; display: block; border-bottom: 1px solid #8
   width: 25%;
   display: none;}
 
-.column:hover img {-webkit-filter: grayscale(100%);}
+.column:hover img {opacity: 0.5;}
 
 .row:after {content: "";
   display: table;

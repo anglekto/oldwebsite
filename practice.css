@@ -72,7 +72,7 @@ padding: 10px;}
 
 footer ul {list-style-type: none;}
 
-.footer-img:hover {filter: grayscale(100%);}
+.footer-img:hover {-webkit-filter: grayscale(100%);}
 
 .portfolio {padding-top: 8%;}
 
@@ -179,7 +179,7 @@ h1::after {content:""; margin: auto; display: block; border-bottom: 1px solid #8
   width: 25%;
   display: none;}
 
-.column:hover img {opacity: 0.5;}
+.column:hover img {-webkit-filter: grayscale(100%);}
 
 .row:after {content: "";
   display: table;
@@ -267,7 +267,7 @@ h1 {font-size: 40px;}
 main, .portfolio {padding-bottom: 10%;}
 .about > #left {float:none; padding-right: 0;}
 #photo {width: 100%;}
-.column {display: block; width: 100%; margin: auto;}
+.column {width: 100%;}
 }
 
 @media only screen and (max-width: 600px) {

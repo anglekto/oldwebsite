@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Angle To - Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="practice.css">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,500,600,700,900" rel="stylesheet">
+</head>
+<body>
+
+  <div class="nav">
+    <div class="nav-header">
+      <div class="logo">
+        <a href="index.html"><img class="img-responsive logo" src="logo.jpeg" alt="Angle's Website Header Image"></a>
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <input type="checkbox" id="nav-check">
+    <div class="nav-links">
+      <a href="index.html#about">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="index.html#faq">FAQs</a>
+      <a href="mailto:xoangleto@gmail.com">Contact</a>
+    </div>
+  </div>
+
+  <main class="portfolio">
+
+    <h1 style="text-align:center;">PORTFOLIO</h1>
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">SHOW ALL</button>
+      <button class="btn" onclick="filterSelection('web')">WEB</button>
+      <button class="btn" onclick="filterSelection('graphic')">GRAPHIC</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column web">
+        <div class="content">
+          <a href="https://www.keendesignsinc.com" target="_blank"><img src="keendesigns.png" alt="Keen Designs Website" style="width:100%"></a>
+        </div>
+      </div>
+
+      <div class="column graphic">
+        <div class="content">
+          <a href="invitation.png" target="_blank"><img src="invitation.png" alt="Wedding Invitation" style="width:100%"></a>
+        </div>
+      </div>
+      <div class="column graphic">
+        <div class="content">
+          <a href="itinerary.png" target="_blank"><img src="itinerary.png" alt="Wedding Invitation" style="width:100%"></a>
+        </div>
+      </div>
+      <div class="column graphic">
+        <div class="content">
+          <a href="rsvp.png" target="_blank"><img src="rsvp.png" alt="Wedding Invitation" style="width:100%"></a>
+        </div>
+      </div>
+      <div class="column graphic">
+        <div class="content">
+          <a href="planner.jpg" target="_blank"><img src="planner.jpg" alt="Planner" style="width:100%"></a>
+        </div>
+      </div>
+    <!-- END GRID -->
+    </div>
+
+    <!-- END MAIN -->
+    </div>
+    </main>
+
+<script src="portfolio.js"></script>
+
+</body>
+<footer>
+  <p>&copy; 2019 Angle To</p>
+  <ul>
+    <li><a href="https://www.linkedin.com/in/angle-to-1baa3a103/" target="_blank"><img class="img-responsive footer-img" src="linkedin.png" arc="LinkedIn Corporation"></a></li>
+  </ul>
+</footer>
+</html>

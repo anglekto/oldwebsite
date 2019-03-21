@@ -124,7 +124,7 @@ margin: 0 auto;}
   border-radius: 10px;
   margin: auto;
   margin-bottom: 8px;
-  display: flex;
+  display: block;
   font-size: 20px;
   font-weight: 600;
   padding: 15px;
@@ -132,11 +132,21 @@ margin: 0 auto;}
   color: #000;
   cursor: pointer;
   width: 80%;
-  text-align: left;
   outline: none;
+  text-align: left;
   transition: 0.4s;}
 
+.accordion:after {content: "+";
+float: right;
+font-size: 20px;
+font-weight: bold;}
+
 .active, .accordion:hover {background-color: #D3D3D3;}
+
+.active:after {content: "-";
+float: right;
+font-size: 20px;
+font-weight: bold;}
 
 .panel {padding: 0 18px;
 display: none;

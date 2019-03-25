@@ -1,0 +1,273 @@
+.img-responsive {
+display: block;
+height: auto;
+max-width: 100%;
+}
+
+main {background-color: #fff;
+  width: 100%;
+  font-family: 'Assistant', serif;
+  font-size: 18px;
+  margin: auto;
+  padding-bottom: 10em;}
+
+.container {background-color: #fff;
+  width: 100%;
+  font-family: 'Assistant', serif;
+  font-size: 18px;
+  margin: auto;
+  padding-bottom: 5%;}
+
+button.accordion {width: 100%;
+background-color: #eee;
+border: none;
+outline: none;
+text-align: left;
+padding: 15px;
+font-size: 16px;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 600;
+cursor: pointer;
+transition: background-color 0.2s linear;
+margin-bottom: 8px;
+border-radius: 8px;}
+
+button.accordion:hover {background-color: #ddd;}
+
+button.accordion:after {
+  content: "\f0d7";
+  font-family: "FontAwesome";
+  font-size: 14px;
+  padding-top: 5px;
+  float: right;
+}
+
+button.accordion.open:after {
+  content: "\f0d8";
+  font-family: "FontAwesome";
+  font-size: 14px;
+  padding-top: 5px;
+  float: right;
+}
+
+.panel {padding: 0 20px;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-in-out;}
+
+.list-proficiencies {display: flex;
+justify-content: center;
+flex-wrap: wrap;}
+
+.proficiencies {display: flex;
+flex-direction: column;
+align-items: center;
+padding: 15px 40px;}
+
+.proficiencies p {letter-spacing: 1px;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 15px;}
+
+nav {display: flex;
+justify-content: space-between;
+padding: 10px;}
+
+nav > .logo {padding: 0 10px;}
+
+nav > .logo a {font-family: 'Dr Sugiyama', cursive;
+display: inline;
+font-weight: bolder;
+font-size: 40px;
+color: #000;
+text-decoration: none;}
+
+nav > .logo a:hover {opacity: 0.4;}
+
+nav > .nav-links {display: inline;
+padding: 10px 0 0 0;}
+
+nav > .nav-links a {padding: 0 20px;
+text-decoration: none;
+font-size: 20px;
+font-weight: 600;
+color: #000;
+text-transform: uppercase;
+letter-spacing: 1px;}
+
+nav > .nav-links a:hover {color: #999;}
+
+nav > button.mobile-nav {display: none;}
+
+a, a:link, a:visited {color: #000;}
+
+a:hover {color: #999;}
+
+h1 {font-size: 50px;
+font-weight: 200;
+text-transform: uppercase;
+letter-spacing: 2px;
+text-align: center;}
+
+h1:after {content: '';
+border-bottom: 1px solid #8e7cc3;
+width: 8%;
+display: block;
+margin: auto;
+padding-top: 10px;}
+
+.about {width: 80%;
+  margin: auto;
+  font-size: 20px;}
+
+.about > #left {float: left;
+  padding-right: 10px;
+  margin: 5px;}
+
+.parallax {
+  background-attachment: fixed;
+  background-image: url('./parallax-image.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  }
+
+.parallax-2 {
+  background-attachment: fixed;
+  background-image: url('./parallax-image.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  }
+
+.inside-parallax {font-family: 'Noto Serif SC', serif;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0 auto;}
+
+footer {background-color: #fff;
+  width: 100%;
+  font-family: 'Assistant', serif;
+  font-size: 18px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;}
+
+footer ul {display: flex;
+  list-style-type: none;
+  padding: 0 10px;}
+
+footer .fab {padding: 0 10px;}
+
+.fa-linkedin:hover, .fa-github:hover {opacity: 0.4;}
+
+#myBtnContainer {display: flex;
+    justify-content: center;}
+
+.row {margin: 10px -16px;
+    width: 80%;
+    margin: auto;}
+
+.row, .row > .column {padding: 5px;}
+
+.column {float: left;
+    width: 25%;
+    display: none;}
+
+.column:hover img {opacity: 0.4;}
+
+.row:after {content: "";
+  display: table;
+  clear: both;}
+
+.content {padding: 5px;
+  text-align: center;
+  padding-bottom: 0;
+  border: 1px solid;}
+
+.show {display:block;}
+
+.btn {border: none;
+  outline: none;
+  color: #000;
+  cursor: pointer;
+  margin: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: #fff;
+  padding: 10px;}
+
+.btn:hover, .btn.active {color: #999;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 600;}
+
+@media only screen and (max-width: 1024px) {
+    main {padding-bottom: 15%;}
+    .parallax {height: 230px;}
+    .parallax-2 {height: 350px;}
+    body, .about > #right {font-size: 17px;}
+    .btn {font-size: 14px;}
+    .accordion {font-size: 18px;}
+    h1 {font-size: 40px;}
+    }
+
+@media only screen and (max-width:800px) {
+main {padding-bottom: 5%;}
+.about > #left {float:none;
+  padding-right: 0;}
+#photo {width: 100%;}
+.column {width: 100%;}
+.proficiencies {font-size: 0.8em;
+  padding: 15px;}
+.proficiencies p {font-size: 13px;}
+
+nav > button.mobile-nav {display: block;
+border: none;
+outline: none;}
+
+button.mobile-nav:after {content: "\f0c9";
+font-family: "FontAwesome";
+font-size: 30px;}
+
+nav > button.mobile-nav:hover {cursor: pointer;}
+
+button.mobile-nav.nav-open:after {content: "\f00d";
+font-family: "FontAwesome";
+font-size: 30px;}
+
+nav > .nav-links {display: none;
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+  background-color: hsla(0,0%,100%,.8);
+  height: auto;
+  overflow: auto;}
+
+nav > .nav-links a {display: block;
+  padding: 10px;}
+}
+
+@media only screen and (max-width: 600px) {
+main, .container {padding-bottom: 10%;}
+.parallax {height: 200px;}
+.parallax-2 {height: 280px;}
+}

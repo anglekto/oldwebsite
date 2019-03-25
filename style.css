@@ -74,19 +74,20 @@ nav {display: flex;
 justify-content: space-between;
 padding: 10px;}
 
-nav > .logo {padding: 0 20px;}
+nav > .logo {padding: 0 18px;}
 
-nav > .logo a {font-family: 'Dr Sugiyama', cursive;
+nav > .logo a {font-family: kewl-script, sans-serif;
+font-style: normal;
+font-weight: 400;
 display: inline;
-font-weight: bolder;
-font-size: 40px;
+font-size: 38px;
 color: #000;
 text-decoration: none;}
 
 nav > .logo a:hover {opacity: 0.4;}
 
 nav > .nav-links {display: inline;
-padding: 10px 0 0 0;}
+padding: 8px 0 0 0;}
 
 nav > .nav-links a {padding: 0 20px;
 text-decoration: none;
@@ -219,14 +220,14 @@ footer .fab {padding: 0 10px;}
   font-weight: 600;}
 
 @media only screen and (max-width: 1024px) {
-    main {padding-bottom: 15%;}
-    .parallax {height: 230px;}
-    .parallax-2 {height: 350px;}
-    body, .about > #right {font-size: 17px;}
-    .btn {font-size: 14px;}
-    .accordion {font-size: 18px;}
-    h1 {font-size: 40px;}
-    }
+main {padding-bottom: 15%;}
+.parallax {height: 230px;}
+.parallax-2 {height: 350px;}
+body, .about > #right {font-size: 17px;}
+.btn {font-size: 14px;}
+.accordion {font-size: 18px;}
+h1 {font-size: 40px;}
+}
 
 @media only screen and (max-width:800px) {
 main {padding-bottom: 5%;}
@@ -252,7 +253,7 @@ nav > button.mobile-nav:hover {cursor: pointer;}
 nav > .nav-links a {display: none;}
 
 .nav-links.responsive {display: inline;
-  top: 80px;
+  top: 90px;
   left: 0px;
   width: 100%;
   background-color: hsla(265, 100%, 86%, 0.4);

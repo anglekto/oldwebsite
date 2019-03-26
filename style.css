@@ -5,17 +5,13 @@ max-width: 100%;
 }
 
 main {background-color: #fff;
-  width: 100%;
   font-family: 'Assistant', serif;
   font-size: 18px;
-  margin: auto;
   padding-bottom: 10em;}
 
 .container {background-color: #fff;
-  width: 100%;
   font-family: 'Assistant', serif;
   font-size: 18px;
-  margin: auto;
   padding-bottom: 5%;}
 
 button.accordion {width: 100%;
@@ -126,6 +122,9 @@ padding-top: 10px;}
   padding-right: 10px;
   margin: 5px;}
 
+  .test {width: 80%;
+  margin: auto;}
+
 .parallax {
   background-attachment: fixed;
   background-image: url('./parallax-image.jpeg');
@@ -176,17 +175,19 @@ footer .fab {padding: 0 10px;}
 .fa-linkedin:hover, .fa-github:hover {opacity: 0.4;}
 
 #myBtnContainer {display: flex;
-    justify-content: center;}
+    justify-content: center;
+  width: 100%;}
 
 .row {margin: 10px -16px;
-    width: 80%;
-    margin: auto;}
+  width: 80%;
+  display: flex;
+  margin: auto;}
 
 .row, .row > .column {padding: 5px;}
 
 .column {float: left;
-    width: 25%;
-    display: none;}
+  width: 25%;
+  display: none;}
 
 .column:hover img {opacity: 0.4;}
 
@@ -234,6 +235,7 @@ main {padding-bottom: 5%;}
 .about > #left {float:none;
   padding-right: 0;}
 #photo {width: 100%;}
+.row {display: block;}
 .column {width: 100%;}
 .inside-parallax {font-size: 25px;}
 .proficiencies {font-size: 0.8em;

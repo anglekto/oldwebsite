@@ -34,8 +34,8 @@ padding: 10px 0;}
 
 nav > .nav-links a {padding: 0 30px;
 text-decoration: none;
-font-size: 19px;
-font-weight: 400;
+font-size: 20px;
+font-weight: 600;
 color: #000;
 text-transform: uppercase;
 letter-spacing: 1px;}
@@ -219,11 +219,19 @@ text-align: center;
 top: 54px;
 left: 0px;
 width: 100%;
-background-color: hsla(0,0%,90%,.2);
+background-color: hsla(0,0%,100%,.7);
+height: calc(100vh - 50px);
+padding: 150px 0 0 0;
 position: absolute;
 overflow: auto;
 box-shadow: 0 2px 5px rgba(0,0,0,.1);}
 
 .nav-links.responsive a {display: block;
-padding: 10px 0;}
+padding: 10px 0;
+font-size: 30px;
+font-weight: 600;}
+}
+
+@media only screen and (max-width: 600px) {
+.bio-image {filter: none;}
 }

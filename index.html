@@ -3,112 +3,85 @@
 <head>
 <title>Angle To</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="author" content="Angle To">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css?family=Assistant:200,300,400,600,700,800" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,500,600,700,900" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
 <link rel="stylesheet" href="https://use.typekit.net/hsv2pkq.css">
 </head>
+
 <body>
 
-  <main>
-
 <nav>
-  <div class="logo"><a href="index.html">Angle To</a></div>
-  <div class="nav-links" id="navi">
-    <a href="index.html#about">About</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="index.html#faq">FAQs</a>
-    <a href="mailto:xoangleto@gmail.com">Let's Collaborate</a>
-  </div>
-  <button class="mobile-nav" onclick="myFunction()"></button>
+    <div class="nav-links" id="navi">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="mailto:xoangleto@gmail.com">Contact</a>
+    </div>
+    <button id="mobile" class="mobile-nav" onclick="myFunction(); myFunction2()">MENU</button>
 </nav>
 
-<h1 id="about">The Creator</h1>
+<main>
 
-<section class="about">
-  <div id="left">
-  <img id="photo" style="padding: 5px; border: 1px solid;" class="img-responsive center-block" src="IMG_4694.jpeg" alt="Angle To Bio Image" width="300">
-</div>
+  <section class="top"></section>
 
-<div id="right">
-  <p style="font-family: 'Noto Serif SC', Serif; text-transform: lowercase; font-weight:200;">Hello, I'm Angle!</p>
-  <p><strong>Star Sign</strong> &ndash; Capricorn</p>
-  <p><strong>Biography</strong> &ndash; I'm an experienced Customer Service professional who happens to find a passion in Coding. I'm currently working at Raymond James Financial as a Web Services Intern and studying part-time at St. Petersburg College. In the <em>rare</em> cases where I'm not busy, I'm either buried (deep) in a book, on an adventure, or, just casually spending time with my loved ones.</p>
-</div>
-</section>
+    <section class="bio" id="about">
+      <div class="bio-left">
+        <p class="heading">The Creator</p>
+        <img class="img-responsive bio-image" src="IMG_4694.jpeg" width="300">
+      </div>
+      <div class="bio-right">
+        <font style="font-family: poynter-oldstyle-display, serif; font-size: 35px; font-weight: 600;">hello, i'm angle</font>
+        <p><strong>STAR SIGN</strong> &ndash; Capricorn<br>
+        <small><strong>TRAITS</strong>: Ambitious, Driven, Diligent, and Sincere</small></p>
+        <p><strong>BIOGRAPHY</strong> &ndash; I'm an experienced Customer Service professional who happens to find a passion in Coding. I'm currently working at Raymond James Financial as a Web Services Intern and studying part-time at St. Petersburg College. In the <em>rare</em> cases where I'm not busy, I'm either buried (deep) in a book, on an adventure, or, just casually spending time with my loved ones.</p>
+      </div>
+    </section>
+
+    <section class="quote">
+      <h1>I can make it look pretty, and work efficiently.</h1>
+      <a href="portfolio.html">Check out my portfolio</a>
+    </section>
+
+    <section class="skills">
+      <h1>Proficiencies</h1>
+        <div class="list-proficiencies">
+          <ul class="proficiencies">
+          <li>Responsive Web Design</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Customer Service</li>
+          <li>Sitecore</li>
+          <li>Bootstrap</li>
+          <li>WiX</li>
+          <li>SquareSpace</li>
+          <li>Adobe Photoshop</li>
+          <li>GIMP</li>
+          <li>Microsoft Windows</li>
+          <li>Mac OS X</li>
+          <li>Microsoft Office</li>
+          <li>Bilingual</li>
+        </ul>
+      </div>
+    </section>
 
 </main>
 
-<div class="parallax">
-<div class="inside-parallax">
-  <p>To the people who look up at the stars and wish,</p>
-</div>
-</div>
-
-<div class="container">
-
-    <h1 id="faq">Frequently Asked Questions</h1>
-
-    <button class="accordion">Where did your love for coding come from?</button>
-    <div class="panel">
-      <p>Once upon a time, there was a little girl. She created a MySpace page and wanted that page to look beautiful. So, she dove blindly into the world of coding. Each day that passed, she would learn something cool and interesting. She ended up being completely immersed in it, and fell in love.</p>
-      <p>After that, she lived happily ever after.</p>
-      <p>...Or something like that.</p>
-    </div>
-
-    <button class="accordion">What EXACTLY are you proficient with?</button>
-    <div class="panel">
-      <div class="list-proficiencies">
-        <div class="proficiencies"><i class="far fa-grin-beam fa-2x"></i><p>Customer Service</p></div>
-        <div class="proficiencies"><i class="fab fa-html5 fa-2x"></i><p>HTML5</p></div>
-        <div class="proficiencies"><i class="fab fa-css3-alt fa-2x"></i><p>CSS3</p></div>
-        <div class="proficiencies"><i class="fab fa-js fa-2x"></i><p>JavaScript</p></div>
-        <div class="proficiencies"><i class="fas fa-code fa-2x"></i><p>Bootstrap</p></div>
-        <div class="proficiencies"><i class="fas fa-laptop-code fa-2x"></i><p>Sitecore</p></div>
-        <div class="proficiencies"><i class="fab fa-adobe fa-2x"></i><p>Adobe Photoshop</p></div>
-        <div class="proficiencies"><i class="fas fa-paint-brush fa-2x"></i><p>GIMP</p></div>
-        <div class="proficiencies"><i class="fab fa-windows fa-2x"></i><p>Microsoft Windows</p></div>
-        <div class="proficiencies"><i class="fab fa-apple fa-2x"></i><p>Mac OS X</p></div>
-        <div class="proficiencies"><i class="far fa-file-alt fa-2x"></i><p>Microsoft Office</p></div>
-        <div class="proficiencies"><i class="fas fa-users fa-2x"></i><p>Bilingual</p></div>
-    </div>
-    </div>
-
-    <button class="accordion">Why did you create this web site?</button>
-    <div class="panel">
-      <p>The thought occurred to me while I was at work one day. I was sitting at my desk, being productive, while feeling extra creative. I literally just thought to myself "I should create a website later when I get home".</p>
-      <p>& here we are!</p>
-    </div>
-
-    <button class="accordion">Give us a fun fact about yourself!</button>
-    <div class="panel">
-      <p>How about I give you a few?</p>
-      <p>1.) I'm afraid of heights, but I like riding rollercoasters!</p>
-      <p>2.) My favorite type of cuisine is Italian &hearts;</p>
-      <p>3.) I also love love LOVE Escape rooms</p>
-    </div>
-</div>
-
-  <div class="parallax-2">
-  <div class="inside-parallax">
-    <p>To the stars who listen —</br> <strong>and the dreams that are answered.</strong><br><font style="font-weight: 200;">Sarah J. Maas</font></p>
-  </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2019 Angle To</p>
-    <ul>
-      <li><a href="https://github.com/anglekto" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/anglekto/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
-    </ul>
-  </footer>
+<footer>
+  <p>&copy; 2019 Angle To</p>
+  <ul>
+    <li><a href="https://github.com/anglekto" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/anglekto/" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+  </ul>
+</footer>
 
 <script src="nav.js"></script>
-<script src="script.js"></script>
+<script src="portfolio.js"></script>
+
 </body>
 </html>

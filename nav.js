@@ -1,9 +1,9 @@
 function myFunction() {
   var x = document.getElementById("mobile");
-  if (x.innerHTML === "X") {
-    x.innerHTML = "MENU";
+  if (x.className === "fas fa-times") {
+    x.className = "mobile-nav";
   } else {
-    x.innerHTML = "X";
+    x.className = "fas fa-times";
   }
 }
 

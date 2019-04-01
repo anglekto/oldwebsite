@@ -34,7 +34,7 @@ padding: 10px 0;}
 
 nav > .nav-links a {padding: 0 30px;
 text-decoration: none;
-font-size: 20px;
+font-size: 20fonpx;
 font-weight: 600;
 color: #000;
 text-transform: uppercase;
@@ -42,7 +42,7 @@ letter-spacing: 1px;}
 
 nav > .nav-links a:hover {color: #999;}
 
-nav > button.mobile-nav {display: none;}
+nav > button.mobile-nav, button.fa-times {display: none;}
 
 h1 {font-family: poynter-oldstyle-display, serif;
 font-size: 35px;
@@ -199,7 +199,7 @@ footer a:hover {color: #999;}
 .column {width: 100%;}
 footer {justify-content: center; margin: auto;}
 
-nav > button.mobile-nav {display: inline;
+nav > button.mobile-nav, button.fa-times {display: inline;
 border: none;
 outline: none;
 font-size: 20px;
@@ -210,13 +210,16 @@ letter-spacing: 1px;
 padding: 5px 0;
 margin: 0 auto;}
 
-nav > button.mobile-nav:hover {cursor: pointer;}
+nav > button.mobile-nav:hover, button.fa-times:hover {cursor: pointer;}
+
+nav > button.mobile-nav::after {content: "MENU";
+display: block;}
 
 nav > .nav-links a {display: none;}
 
 .nav-links.responsive {display: block;
 text-align: center;
-top: 54px;
+top: 50px;
 left: 0px;
 width: 100%;
 background-color: hsla(0,0%,100%,.7);

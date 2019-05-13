@@ -243,7 +243,7 @@ button.mobile-nav {display: block;
 button.mobile-nav::after {
   content: "MENU";
   display: block;
-  padding: 18px 0;
+  padding: 15px 0;
 }
 
 button.mobile-nav.responsive::after {
@@ -265,12 +265,12 @@ background-color: transparent;}
 
 .nav-links.responsive {display: block;
 text-align: center;
-top: 42px;
+top: 36px;
 left: 0px;
 width: 100%;
 background-color: hsla(0,0%,100%,.7);
 height: calc(100vh - 50px);
-padding: 150px 0 0 0;
+padding: 130px 0 0 0;
 position: absolute;
 overflow: auto;
 box-shadow: 0 2px 5px rgba(0,0,0,.1);}

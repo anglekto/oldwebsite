@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Angle To</title>
+<title>Angle To | Front-End Developer</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="author" content="Angle To">
@@ -15,13 +15,17 @@
 
 <body>
 
-<nav>
-    <div class="nav-links" id="navi">
-      <a href="index.html">Home</a>
-      <a href="index.html#about">About</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="mailto:xoangleto@gmail.com">Contact</a>
-    </div>
+<nav id="nav-bar">
+    <ul class="nav-links" id="navi">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li id="port" class="port" onclick="show(); myFunction3()"><a>Portfolio</a>
+      <ul class="port-drop">
+        <li><a href="design.html">Design</a></li>
+        <li><a href="development.html">Development</a></li>
+      </ul></li>
+      <li><a href="mailto:xoangleto@gmail.com">Contact</a></li>
+    </ul>
     <button id="mobile" class="mobile-nav" onclick="myFunction(); myFunction2()"></button>
 </nav>
 

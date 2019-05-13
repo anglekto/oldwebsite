@@ -19,30 +19,73 @@ background-position: center;
 padding: 20%;
 margin-top: 60px;}
 
-nav {background-color: #fff;
-display: flex;
-justify-content: center;
-width: 100%;
-padding: 10px;
-position: fixed;
-box-shadow: 0 2px 5px rgba(0,0,0,.1);
-top: 0;
-z-index: 3;}
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  z-index: 3;
+  margin: 0;
+}
 
-nav > .nav-links {display: inline;
-padding: 10px 0;}
+.nav-links {
+  position: relative;
+  list-style-type: none;
+  padding: 0;
+}
 
-nav > .nav-links a {padding: 0 30px;
-text-decoration: none;
-font-size: 20px;
-font-weight: 600;
-color: #000;
-text-transform: uppercase;
-letter-spacing: 1px;}
+.nav-links li {
+  display: inline-flex;
+  padding: 0 30px;
+}
 
-nav > .nav-links a:hover {color: #999;}
+.nav-links li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
 
-nav > button.mobile-nav, button.fa-times {display: none;}
+.port a {cursor: pointer;}
+
+.port > a::after {
+  content:"\f107";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #000;
+  padding-left: 5px;
+  margin-top: 3px;
+}
+
+.port.responsive > a::after {
+  content:"\f106";
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	color: #000;
+  padding-left: 5px;
+  margin-top: 3px;
+}
+
+.port-drop {
+  display: none;
+  position: absolute;
+  list-style-type: none;
+  padding: 10px 15px;
+  margin: 44px 0;
+  background-color: hsla(0,0%,100%,.9);
+}
+
+.port-drop li {
+  display: block;
+  padding: 3px 0;
+}
+
+button.mobile-nav {display: none;}
 
 h1 {font-family: poynter-oldstyle-display, serif;
 font-size: 35px;
@@ -186,27 +229,43 @@ footer a:hover {color: #999;}
 .column {max-width: 100%;}
 footer {justify-content: center; margin: auto;}
 
-nav > button.mobile-nav, button.fa-times {display: inline;
-border: none;
-outline: none;
-font-size: 20px;
-font-weight: 600;
-color: #000;
-text-transform: uppercase;
-letter-spacing: 1px;
-padding: 5px 0;
-margin: 0 auto;}
+button.mobile-nav {display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;}
 
-nav > button.mobile-nav:hover, button.fa-times:hover {cursor: pointer;}
+button.mobile-nav::after {
+  content: "MENU";
+  display: block;
+  padding: 18px 0;
+}
 
-nav > button.mobile-nav::after {content: "MENU";
-display: block;}
+button.mobile-nav.responsive::after {
+  content: "\f00d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #000;
+}
 
-nav > .nav-links a {display: none;}
+.nav-links {display: none;}
+
+.nav-links li {
+  display: block;
+}
+
+.port-drop {position: static;
+margin: 5px 0;
+background-color: transparent;}
 
 .nav-links.responsive {display: block;
 text-align: center;
-top: 50px;
+top: 42px;
 left: 0px;
 width: 100%;
 background-color: hsla(0,0%,100%,.7);
@@ -219,7 +278,7 @@ box-shadow: 0 2px 5px rgba(0,0,0,.1);}
 .nav-links.responsive a {display: block;
 padding: 10px 0;
 font-size: 30px;
-font-weight: 600;}
+font-weight: 600;
 }
 
 @media only screen and (max-width: 600px) {

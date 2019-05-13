@@ -99,7 +99,7 @@ letter-spacing: -1px;}
 
 .bio {width: calc(100% - 60px);
 display: flex;
-margin: 70px auto 50px auto;
+margin: 80px auto 50px auto;
 justify-content: space-between;}
 
 .heading {font-family: 'Oswald', sans-serif;
@@ -283,5 +283,6 @@ font-weight: 600;
 
 @media only screen and (max-width: 600px) {
 .column {max-width: 100%; flex: 100%;}
+.bio {margin: 70px auto 50px auto;}
 .bio-photo img {filter: none; -webkit-filter: none;}
 }
